@@ -1,0 +1,7 @@
+{
+  "name": "ams-ionic-product",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
