@@ -89,7 +89,7 @@ export class ProductService {
     return this.http.get<Product[]>(`${environment.baseUrl}/products`);
   }
 
-  getProductById(id:number):Observable<Product>{
+  getProductById(id:string):Observable<Product>{
     return this.http.get<Product>(`${environment.baseUrl}/products/${id}`);
   }
 }
