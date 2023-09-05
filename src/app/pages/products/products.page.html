@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Produtos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+      <ion-item button *ngFor="let product of products" [routerLink]="[product.id]">
+        <ion-label><h1>{{product.name}}</h1></ion-label>
+      </ion-item>
+    </ion-list>
+</ion-content>

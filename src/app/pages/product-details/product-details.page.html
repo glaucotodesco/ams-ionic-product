@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/products"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Dados do produto:
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-group>
+      <ion-item>
+        <ion-label><h1>Id:</h1><p>{{ product.id }}</p></ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          <h1>Nome:</h1>
+          <p>{{ product.name }}</p>
+               </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label><h1>Preço:</h1> <p>{{ product.price | currency:'BRL':true:'1.2-2'}}</p> </ion-label>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
